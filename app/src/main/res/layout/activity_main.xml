@@ -12,6 +12,7 @@
 komentarz musi być poza elementami
 -->
     <TextView
+        android:id="@+id/polecenie_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margines_tekstu"
@@ -19,6 +20,16 @@ komentarz musi być poza elementami
         android:textSize="@dimen/rozmiar_czcionki_pytanie"
         android:textColor="@color/white"
         android:text="@string/polecenie" />
+
+    <TextView
+        android:id="@+id/textViewpunkty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margines_tekstu"
+        android:textAlignment="center"
+        android:textSize="@dimen/rozmiar_czcionki_pytanie"
+        android:textColor="@color/white"
+        android:text="" />
 
     <LinearLayout
         android:layout_width="match_parent"

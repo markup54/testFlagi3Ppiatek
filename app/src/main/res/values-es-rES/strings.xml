@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prueba de bandera</string>
+    <string name="polecenie">Elige colores que no estén en la bandera polaca.</string>
+    <string name="komunikat">"Completado, recibido la bandera polaca, tu puntuación "</string>
+</resources>

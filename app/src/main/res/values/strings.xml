@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">TestFlagi3Ppiatek</string>
+    <string name="app_name">Test Flagi</string>
     <string name="polecenie">Wybierz kolory, których nie ma we fladze Polski</string>
+    <string name="komunikat">"Zakończono otrzymano flagę Polski, twoja puktacja"</string>
 </resources>
