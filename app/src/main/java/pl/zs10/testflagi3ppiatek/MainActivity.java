@@ -21,12 +21,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textViewPolecenie = findViewById(R.id.polecenie_txt);
         textViewPunkty = findViewById(R.id.textViewpunkty);
-
+        button1 = findViewById(R.id.button);
+        button1.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        odpowiedzOk(v);
+                    }
+                }
+        );
     }
 
     public void odpowiedzOk(View view) {
-        if(punktacja>0)
-            punktacja = punktacja -5;
+        if (punktacja > 0)
+            punktacja = punktacja - 5;
         Toast.makeText(this, "Nie powinieneś tego klikać", Toast.LENGTH_SHORT).show();
     }
 
@@ -38,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         int idPrzycisku = view.getId();
         Button button = findViewById(idPrzycisku);
         button.setVisibility(View.INVISIBLE);
-        if(liczbaKliknietychPrzyciskow == 4){
+        if (liczbaKliknietychPrzyciskow == 4) {
             //Toast.makeText(this, "Koniec gry"+punktacja, Toast.LENGTH_SHORT).show();
             String tekst = punktacja.toString();
             textViewPolecenie.setText(R.string.komunikat);
